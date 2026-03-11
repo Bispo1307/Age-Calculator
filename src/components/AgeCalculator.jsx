@@ -73,10 +73,10 @@ export const AgeCalculator = () => {
   };
 
   return (
-    <div className="font-poppins pl-6 md:pl-14 pr-10 md:pr-14 pt-10 md:pt-14 pb-14 md:pb-16 max-w-88 md:max-w-180 lg:max-w-210 rounded-3xl rounded-br-[108px] md:rounded-br-[192px] bg-neutral-white">
+    <div className="font-poppins pl-6 md:pl-14 pr-10 md:pr-14 pt-10 md:pt-14 pb-14 md:pb-16 max-w-sm md:max-w-xl lg:max-w-4xl rounded-3xl rounded-br-[108px] md:rounded-br-[192px] bg-neutral-white">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="pb-14 md:pb-10 flex items-center justify-between relative gap-3 md:gap-8 border-b-2 border-neutral-200"
+        className="pb-14 flex items-center justify-between relative gap-3 md:gap-8 border-b-2 border-neutral-200"
       >
         <div className="flex flex-col gap-1.5">
           <label
@@ -96,7 +96,7 @@ export const AgeCalculator = () => {
             placeholder="DD"
             inputMode="numeric"
             onChange={(e) => e.target.value.replace(/\D/g, "")}
-            className={`w-22 md:w-40 py-3 md:py-4 px-4 md:px-6 text-xl md:text-4xl font-extrabold rounded-xl border text-neutral-black ${errors?.day ? "border-primary-red-400" : "border-neutral-200"} focus:border-primary-purple-500 focus:outline-0 placeholder:text-neutral-500`}
+            className={`w-20 md:w-32 lg:w-40 py-3 md:py-4 px-4 md:px-6 text-xl md:text-4xl font-extrabold rounded-xl border text-neutral-black ${errors?.day ? "border-primary-red-400" : "border-neutral-200"} focus:border-primary-purple-500 focus:outline-0 placeholder:text-neutral-500`}
           />
           {errors?.day && (
             <small className="text-xs italic text-primary-red-400">
@@ -122,7 +122,7 @@ export const AgeCalculator = () => {
             placeholder="MM"
             inputMode="numeric"
             onChange={(e) => e.target.value.replace(/\D/g, "")}
-            className={`w-22 md:w-40 py-3 md:py-4 px-4 md:px-6 text-xl md:text-4xl font-extrabold rounded-xl border text-neutral-black ${errors?.month ? "border-primary-red-400" : "border-neutral-200"} focus:border-primary-purple-500 focus:outline-0 placeholder:text-neutral-500`}
+            className={`w-20 md:w-32 lg:w-40 py-3 md:py-4 px-4 md:px-6 text-xl md:text-4xl font-extrabold rounded-xl border text-neutral-black ${errors?.month ? "border-primary-red-400" : "border-neutral-200"} focus:border-primary-purple-500 focus:outline-0 placeholder:text-neutral-500`}
           />
           {errors?.month && (
             <span className="text-xs italic text-primary-red-400">
@@ -161,7 +161,7 @@ export const AgeCalculator = () => {
         </div>
         <button
           type="submit"
-          className="w-16 md:w-20 h-16 md:h-20 cursor-pointer flex items-center justify-center rounded-full absolute md:relative top-26 md:top-24 left-[40%] md:left-0 transition bg-primary-purple-500 hover:bg-neutral-black"
+          className="w-16 md:w-20 h-16 md:h-20 cursor-pointer flex items-center justify-center rounded-full absolute top-26 md:top-30 left-[40%] md:left-[45%] lg:left-11/12 transition bg-primary-purple-500 hover:bg-neutral-black"
         >
           <img
             src={iconArrow}
@@ -170,7 +170,7 @@ export const AgeCalculator = () => {
           />
         </button>
       </form>
-      <section className="pt-12 md:pt-6">
+      <section className="pt-12 md:pt-10">
         <div className="font-bold italic text-[52px]/18 md:text-[92px]/24 flex items-center gap-3">
           <span className="text-primary-purple-500">{year}</span>
           <strong>anos</strong>
