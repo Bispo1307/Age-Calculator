@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: Poppins, sans-serif;
+
+  --color-primary-purple-500: hsl(259, 100%, 65%);
+  --color-primary-red-400: hsl(0, 100%, 67%);
+
+  --color-neutral-white: hsl(0, 100%, 100%);
+  --color-neutral-grey-100: hsl(0, 0%, 94%);
+  --color-neutral-grey-200: hsl(0, 0%, 86%);
+  --color-neutral-grey-500: hsl(0, 1%, 44%);
+  --color-neutral-black: hsl(0, 0%, 0%);
+}
