@@ -58,15 +58,15 @@ export const AgeCalculator = () => {
     if (!isValidDate) {
       setError("day", {
         type: "manual",
-        message: "Must be a valid date",
+        message: "Deve ser uma data válida.",
       });
       setError("month", {
         type: "manual",
-        message: "Must be a valid date",
+        message: "Deve ser uma data válida.",
       });
       setError("year", {
         type: "manual",
-        message: "Must be a valid date",
+        message: "Deve ser uma data válida.",
       });
       return;
     }
@@ -89,9 +89,9 @@ export const AgeCalculator = () => {
             id="day"
             type="text"
             {...register("day", {
-              required: "This field is required",
-              min: { value: 1, message: "Must be a valid day" },
-              max: { value: 31, message: "Must be a valid day" },
+              required: "Este campo é obrigatório.",
+              min: { value: 1, message: "Deve ser um dia válido." },
+              max: { value: 31, message: "Deve ser um dia válido." },
             })}
             placeholder="DD"
             inputMode="numeric"
@@ -115,9 +115,9 @@ export const AgeCalculator = () => {
             id="month"
             type="text"
             {...register("month", {
-              required: "This field is required",
-              min: { value: 1, message: "Must be a valid month" },
-              max: { value: 12, message: "Must be a valid month" },
+              required: "Este campo é obrigatório.",
+              min: { value: 1, message: "Deve ser um mês válido." },
+              max: { value: 12, message: "Deve ser um mês válido." },
             })}
             placeholder="MM"
             inputMode="numeric"
@@ -141,11 +141,11 @@ export const AgeCalculator = () => {
             id="year"
             type="text"
             {...register("year", {
-              required: "This field is required",
-              min: { value: 1900, message: "Year must be after 1900" },
+              required: "Este campo é obrigatório.",
+              min: { value: 1900, message: "O ano deve ser posterior a 1900." },
               max: {
                 value: new Date().getFullYear(),
-                message: "Must be in the past",
+                message: "Deve ser do passado.",
               },
             })}
             placeholder="AAAA"
